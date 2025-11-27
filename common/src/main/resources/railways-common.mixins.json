@@ -48,7 +48,6 @@
     "MixinIOWorker",
     "MixinItemCombinerMenu",
     "MixinLargeFireball",
-    "MixinLootTables",
     "MixinMountedStorageManager",
     "MixinNavigation",
     "MixinNixieTubeBlockEntity",

@@ -81,6 +81,9 @@ allprojects {
 
     java {
         withSourcesJar()
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        }
     }
 }
 
@@ -347,6 +350,8 @@ operator fun String.invoke(): String {
 fun Project.setupRepositories() {
     repositories {
         mavenCentral()
+        maven("https://modmaven.dev/") // Flywheel
+        maven("https://squiddev.cc/maven/")
         maven("https://maven.shedaniel.me/") // Cloth Config, REI
         maven("https://maven.blamejared.com/") // JEI, Hex Casting
         exclusiveMaven("https://maven.parchmentmc.org", "org.parchmentmc.data") // Parchment mappings
